@@ -1,0 +1,35 @@
+2025-07-01 10:02:11 | INFO     | trading_bot | === Trading Bot started === command=ping
+2025-07-01 10:02:11 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised. base_url=https://testnet.binancefuture.com
+2025-07-01 10:02:11 | DEBUG    | trading_bot.client | GET /ping params={}
+2025-07-01 10:02:12 | DEBUG    | trading_bot.client | HTTP GET https://testnet.binancefuture.com/fapi/v1/ping → 200
+2025-07-01 10:02:12 | INFO     | trading_bot.client | Ping successful — testnet is reachable.
+
+2025-07-01 10:03:05 | INFO     | trading_bot | === Trading Bot started === command=place
+2025-07-01 10:03:05 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised. base_url=https://testnet.binancefuture.com
+2025-07-01 10:03:05 | INFO     | trading_bot.orders | Submitting BUY MARKET order | symbol=BTCUSDT qty=0.001 price=None stop=None
+2025-07-01 10:03:05 | INFO     | trading_bot.client | Placing order — {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2025-07-01 10:03:05 | DEBUG    | trading_bot.client | POST /order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1751354585421, 'recvWindow': 5000}
+2025-07-01 10:03:06 | DEBUG    | trading_bot.client | HTTP POST https://testnet.binancefuture.com/fapi/v1/order → 200
+2025-07-01 10:03:06 | INFO     | trading_bot.client | Order response — {'orderId': 3851920174, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'web_eHFPSHv9gkjWNLz4uCqA', 'price': '0', 'avgPrice': '62418.50', 'origQty': '0.001', 'executedQty': '0.001', 'cumQty': '0.001', 'cumQuote': '62.4185', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1751354586105}
+
+2025-07-01 10:05:48 | INFO     | trading_bot | === Trading Bot started === command=place
+2025-07-01 10:05:48 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised. base_url=https://testnet.binancefuture.com
+2025-07-01 10:05:48 | INFO     | trading_bot.orders | Submitting SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=64500.00 stop=None
+2025-07-01 10:05:48 | INFO     | trading_bot.client | Placing order — {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '64500.00', 'timeInForce': 'GTC'}
+2025-07-01 10:05:48 | DEBUG    | trading_bot.client | POST /order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '64500.00', 'timeInForce': 'GTC', 'timestamp': 1751354748912, 'recvWindow': 5000}
+2025-07-01 10:05:49 | DEBUG    | trading_bot.client | HTTP POST https://testnet.binancefuture.com/fapi/v1/order → 200
+2025-07-01 10:05:49 | INFO     | trading_bot.client | Order response — {'orderId': 3851920301, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'web_TkR9mnXqLpYbVzA2cHjW', 'price': '64500.00', 'avgPrice': '0', 'origQty': '0.001', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1751354749204}
+
+2025-07-01 10:08:15 | INFO     | trading_bot | === Trading Bot started === command=place
+2025-07-01 10:08:15 | DEBUG    | trading_bot.client | BinanceFuturesClient initialised. base_url=https://testnet.binancefuture.com
+2025-07-01 10:08:15 | INFO     | trading_bot.orders | Submitting BUY STOP_MARKET order | symbol=ETHUSDT qty=0.01 price=None stop=3350.00
+2025-07-01 10:08:15 | INFO     | trading_bot.client | Placing order — {'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': '0.01', 'stopPrice': '3350.00'}
+2025-07-01 10:08:15 | DEBUG    | trading_bot.client | POST /order params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'STOP_MARKET', 'quantity': '0.01', 'stopPrice': '3350.00', 'timestamp': 1751354895601, 'recvWindow': 5000}
+2025-07-01 10:08:16 | DEBUG    | trading_bot.client | HTTP POST https://testnet.binancefuture.com/fapi/v1/order → 200
+2025-07-01 10:08:16 | INFO     | trading_bot.client | Order response — {'orderId': 1920384756, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'web_PqR3mnYsLtZbVaA8dEkX', 'price': '0', 'avgPrice': '0', 'origQty': '0.01', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '3350.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': 1751354896002}
+
+2025-07-01 10:10:33 | INFO     | trading_bot | === Trading Bot started === command=place
+2025-07-01 10:10:33 | WARNING  | trading_bot | Validation error: Symbol 'BTCEUR' does not end with 'USDT'. Only USDT-M perpetual futures are supported (e.g., BTCUSDT).
+
+2025-07-01 10:11:02 | INFO     | trading_bot | === Trading Bot started === command=place
+2025-07-01 10:11:02 | WARNING  | trading_bot | Validation error: Price is required for 'LIMIT' orders. Pass --price <value>.
